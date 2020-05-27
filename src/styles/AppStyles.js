@@ -4,6 +4,8 @@ const AppStyles = makeStyles({
   root: {
     display: "flex",
     height: "100%",
+    flexDirection: "column",
+    color: "white",
   },
   header: {
     boxSizing: "border-box",
@@ -12,12 +14,13 @@ const AppStyles = makeStyles({
     backgroundColor: "hsl(232, 19%, 15%)",
     color: "hsl(0, 0%, 100%)",
     width: "100%",
-    height: "15vh",
+    height: "15%",
     borderBottomLeftRadius: "25px",
     borderBottomRightRadius: "25px",
     display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
+    width: "100%",
+    // justifyContent: "space-between",
+    // alignItems: "center",
   },
   heading: {
     fontSize: "2rem",
@@ -36,6 +39,12 @@ const AppStyles = makeStyles({
   sub: {
     marginRight: "1%",
     color: "hsl(228, 34%, 66%)",
+  },
+  bottom: {
+    marginTop: "5%",
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
   },
 });
 

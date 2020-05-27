@@ -1,6 +1,7 @@
 import React from "react";
 import AppStyles from "./styles/AppStyles";
 import { Container, Switch } from "@material-ui/core";
+import FacebookCard from "./components/FacebookCard";
 
 const App = () => {
   const classes = AppStyles();
@@ -16,6 +17,12 @@ const App = () => {
           <Switch />
         </div>
       </header>
+      <Container maxWidth="md" className={classes.bottom}>
+        <FacebookCard />
+        <FacebookCard />
+        <FacebookCard />
+        <FacebookCard />
+      </Container>
     </div>
   );
 };
